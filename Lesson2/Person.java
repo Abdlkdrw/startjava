@@ -6,23 +6,23 @@ public class Person {
     float weight = 74.4f;
     int age = 19; 
 
-    String toGo() {
+    String go() {
         return "Пройдено 2 шага";
     }
 
-    boolean toSeat() {
+    boolean seat() {
         return false;
     }
 
-    void toRun() {
+    void run() {
         System.out.println("Пробежать 100 м");
     }
 
-    String toSpeak() {
+    String speak() {
         return "My name is " + name; 
     }
 
-    boolean toLearnJava() {
+    boolean learnJava() {
         return true;
     }
 }

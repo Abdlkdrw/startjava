@@ -5,7 +5,7 @@ public class WolfTest {
         wolf.setAge(9);
         wolf.setColor("White");
         System.out.println("Волку " + wolf.getAge() + " лет");  
-        wolf.toSeat();
-        System.out.println("Волк по имени " + wolf.getName() + " " + wolf.toHowl());
+        wolf.seat();
+        System.out.println("Волк по имени " + wolf.getName() + " " + wolf.howl());
     }
 }

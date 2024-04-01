@@ -50,23 +50,23 @@ public class Wolf {
         this.color = color;
     }
 
-    public void toGo() {
+    public void go() {
         System.out.println("идёт");
     }
 
-    public void toSeat() {
+    public void seat() {
         System.out.println("сидит");
     }
 
-    public void toRun() {
+    public void run() {
         System.out.println("бежит");
     }
 
-    public String toHowl() {
+    public String howl() {
         return "воет";
     }
 
-    public void toHunting() {
+    public void hunting() {
         System.out.println("охотится");
     }
 }
