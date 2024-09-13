@@ -4,9 +4,14 @@ public class GuessNumberTest {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
+        System.out.print("Введите имя первого игрока: ");
+        String firstPlayerName = scan.nextLine();
+        Player firstPlayer = new Player(firstPlayerName);
+
+        System.out.print("Введите имя второго игрока: ");
+        String secondPlayerName = scan.nextLine();
+        Player secondPlayer = new Player(secondPlayerName);
         
-        Player firstPlayer = new Player();
-        Player secondPlayer = new Player();
         GuessNumber gNum = new GuessNumber(firstPlayer, secondPlayer);
         String answer;
         do {

@@ -1,4 +1,4 @@
-import java.lang.Math;
+import java.util.Random;
 import java.util.Scanner;
 
 public class GuessNumber {
@@ -13,13 +13,12 @@ public class GuessNumber {
     }
 
     public void game() {
-        boolean isWin = false;
-        int randomNum = (int) (Math.random() * 100) + 1;
-        do {
+        Random rnd = new Random();
+        int randomNum = rnd.nextInt(100) + 1;
+        while(true){
             System.out.print(firstPlayer.getName() + ", введите число: ");
             int firstPlayerNum = scan.nextInt();
             if (firstPlayerNum == randomNum) {
-                isWin = true;
                 System.out.println("Поздравляю! " + firstPlayer.getName() + " выиграл! Это число " + randomNum);
                 break;
             } else if(firstPlayerNum > randomNum) {
@@ -30,7 +29,6 @@ public class GuessNumber {
             System.out.print(secondPlayer.getName() + ", введите число: ");
             int secondPlayerNum = scan.nextInt();
             if (secondPlayerNum == randomNum) {
-                isWin = true;
                 System.out.println("Поздравляю! " + secondPlayer.getName() + " выиграл! Это число " + randomNum);
                 break;
             } else if(secondPlayerNum > randomNum) {
@@ -38,6 +36,6 @@ public class GuessNumber {
             } else {
                 System.out.println("Число " + secondPlayerNum + " меньше того, что загадал компьютер");
             }
-        } while (!isWin); 
+        }
     }
 }

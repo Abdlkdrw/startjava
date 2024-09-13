@@ -1,8 +1,7 @@
 public class Calculator {
-    public void calculate(int firstNum, int secondNum, String mathOperation) {
+    public void calculate(int firstNum, int secondNum, char operation) {
         int calculate = 1; 
-        char symbol = mathOperation.charAt(0);
-        switch(symbol) {
+        switch(operation) {
             case '+':
                 calculate = firstNum + secondNum;
                 break;  

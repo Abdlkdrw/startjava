@@ -1,12 +1,8 @@
-import java.util.Scanner;
-
 public class Player {
-    private String name;
-    Scanner scan = new Scanner(System.in);
 
-    public Player() {
-        System.out.print("Введите имя игрока: ");
-        String name = scan.nextLine();
+    private String name;
+
+    public Player(String name) {
         this.name = name;
     }
 
