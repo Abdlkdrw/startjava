@@ -1,3 +1,5 @@
+package com.startjava.lesson_1.final_;
+
 public class myGame {
     public static void main(String[] args) {
         int myNum = 16;
