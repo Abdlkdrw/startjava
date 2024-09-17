@@ -6,6 +6,10 @@ import java.util.Random;
     // Игра Камень-Ножницы-Бумага
 public class RpsGameFormatting {
 
+    private static final String ROCK = "R";
+    private static final String SCISSORS = "S";
+    private static final String PAPER = "P";
+
     public static void main(String[] args) throws InterruptedException {
         Random r = new Random();
         Scanner scan = new Scanner(System.in);
@@ -24,10 +28,6 @@ public class RpsGameFormatting {
 
         defineWinner(firstPlayer, sign1, secondPlayer, sign2);
     }
-
-    private static final String ROCK = "R";
-    private static final String SCISSORS = "S";
-    private static final String PAPER = "P";
 
     private static String inputName(Scanner scan) {
         System.out.print("Введите имя игрока: ");
@@ -54,11 +54,11 @@ public class RpsGameFormatting {
     private static void showSigns(String sign) throws InterruptedException {
         for(int i = 0; i < 5; i++) {
             System.out.print(ROCK + "\r");
-            Thread.sleep(200);
+            Thread.sleep(150);
             System.out.print(SCISSORS + "\r");
-            Thread.sleep(200);
+            Thread.sleep(150);
             System.out.print(PAPER + "\r");
-            Thread.sleep(200);
+            Thread.sleep(150);
         }
         System.out.println(sign);
     }
